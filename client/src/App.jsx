@@ -1,7 +1,11 @@
+import Navabr from './components/Navbar';
+
 const App = () => {
-  return <div className="app">App</div>;
+  return (
+    <div className="app">
+      <Navabr />
+    </div>
+  );
 };
 
 export default App;
-//git config --global user.name "Victorkib"
-// git config --global user.email victor3720kibiwott@gmail.com
