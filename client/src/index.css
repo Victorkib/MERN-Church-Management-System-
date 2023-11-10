@@ -1,3 +1,202 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  background-color: wheat;
+}
+.navbar header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  border-bottom: 1px solid crimson;
+  height: 9vh;
+  margin-bottom: 6px;
+}
+.navbar header h1 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: olive;
+  text-shadow: 2px 2px 4px rgb(17, 170, 86);
+}
+.navbar header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar nav a {
+  padding: 0px 5px;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+/**/
+/**/
+
+.hero {
+  text-align: center;
+  width: 1300px;
+  margin: 0 auto;
+  height: 100vh;
+  background-image: url('churchImg2.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 100px 0;
+}
+
+/**/
+
+.Signup,
+.login,
+.workout-form {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.Signup h2,
+.login h2,
+.workout-form h2 {
+  color: chocolate;
+  font-size: 2rem;
+  text-align: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  height: 50vh;
+}
+form label {
+  color: rgb(30, 167, 25);
+  text-transform: capitalize;
+}
+form input {
+  text-align: justify;
+  width: 90%;
+  background: none;
+  border: 1px solid rgba(201, 32, 125, 0.473);
+  border-radius: 8px;
+  margin: 5px 0px;
+  padding: 5px;
+  height: 4vh;
+}
+form button {
+  margin-top: 20px;
+  max-width: 80px;
+  border: none;
+  border-radius: 12px;
+  background: yellowgreen;
+  padding: 8px;
+  transition: all 500ms ease-in-out;
+}
+/**/
+
+/* Footer Styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 5px;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.footer-logo img {
+  width: 30%;
+  height: auto;
+  object-fit: contain;
+}
+.footer-logo h1 {
+  font-size: 24px;
+  margin: 0;
+}
+.logo {
+  width: 150px;
+  height: auto;
+}
+.links {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+.links li a {
+  margin: 0 8px;
+}
+.footer-links ul,
+.footer-social ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li,
+.footer-social ul li {
+  margin: 10px 0;
+}
+
+.footer-links ul li a,
+.footer-social ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover,
+.footer-social ul li a:hover {
+  color: #ff6600;
+}
+
+.footer-bottom {
+  margin: 5px 0px;
+  background-color: #222;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+  color: #fff;
+}
+
+/*End of Footer Css from GPT*/
+
+/*Scroll bar css*/
+/* Hide the default scrollbar on Webkit browsers (Safari, Chrome) */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Customize the scrollbar track */
+::-webkit-scrollbar-track {
+  background: #333; /* Change the background color to your desired color */
+}
+
+/* Customize the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background: #666; /* Change the thumb color to your desired color */
+  border-radius: 6px; /* Add rounded corners to the thumb */
+}
+
+/* When the user hovers over the scrollbar */
+::-webkit-scrollbar-thumb:hover {
+  background: #888; /* Change the thumb color on hover */
+}
+
+/*End Of Scroll bar css*/
