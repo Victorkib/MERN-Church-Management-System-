@@ -89,6 +89,7 @@
 
 /*end of account-navbar css*/
 
+/*home main*/
 .home-main {
   display: flex;
   justify-content: center;
@@ -170,6 +171,9 @@
   width: 33.33%;
   height: 100%;
   transition: transform 0.3s;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(39, 23, 23, 0.966);
 }
 .sermon:hover,
 .event:hover {
@@ -179,7 +183,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30vh;
+  height: 50vh;
   max-width: 1300px;
   margin: 0 auto;
   margin-bottom: 20px;
@@ -187,14 +191,43 @@
 }
 .down {
   width: 25%;
-  height: 100%;
+  height: 80%;
   margin: 2px;
   border: 1px solid coral;
+  border-radius: 12px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(39, 23, 23, 0.966);
   transition: transform 0.3s ease-in;
 }
 .down:hover {
   transform: scale(1.02);
 }
+/* Add these styles to your existing styles or create a new stylesheet */
+
+.events-slider {
+  margin: 20px 0;
+}
+
+.slick-slider {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.slick-slide {
+  padding: 0 10px;
+}
+
+.event {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  height: 50vh;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(39, 23, 23, 0.966);
+}
+
+/* Customize these styles based on your design preferences */
 
 /**/
 

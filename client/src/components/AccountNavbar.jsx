@@ -36,7 +36,7 @@ const AccountNavbar = () => {
       if (!response.ok) {
         setError(json.error);
       } else {
-        console.log(json);
+        // console.log(json);
         dispatch(resetUserName());
         dispatch(resetIsloggedIn());
         navigate('/');
@@ -55,7 +55,7 @@ const AccountNavbar = () => {
     if (!response.ok) {
       setError(json.error);
     } else {
-      console.log(json);
+      // console.log(json);
       setUserName(json.userName);
       setPhoneNumber(json.phoneNumber);
     }

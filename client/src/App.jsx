@@ -11,6 +11,7 @@ import {
   setIsloggedIn,
 } from './features/isLoggedIn/isLoggedInSlice';
 import { resetUserName, setUsersName } from './features/userName/userNameSlice';
+import Test from './pages/Test';
 
 const App = () => {
   const dispatch = useDispatch();
@@ -40,7 +41,7 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-
+          <Route path="/test" element={<Test />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
         </Routes>
