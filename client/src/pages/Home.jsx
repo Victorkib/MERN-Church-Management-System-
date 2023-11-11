@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -6,7 +7,7 @@ const Home = () => {
   useEffect(() => {
     toast(' Welcome!', {
       position: 'top-right',
-      autoClose: 1000,
+      autoClose: 900,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
@@ -17,9 +18,77 @@ const Home = () => {
   }, []);
   return (
     <div>
-      <section className="hero">
-        <h1>Welcome to Our Church</h1>
-        <p>Join us in Fellowship</p>
+      <section className="home-main">
+        <div className="hm1 image">
+          <img src="churchImg2.jpg" alt="church image" />
+        </div>
+        <div className="hm2 welcome-home">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+            autem repudiandae officia labore. Et repudiandae libero incidunt
+            soluta, harum fugiat repellat error consectetur, pariatur impedit
+            delectus, commodi vero ab iure?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+            autem repudiandae officia labore. Et repudiandae libero incidunt
+            soluta, harum fugiat repellat error consectetur, pariatur impedit
+            delectus, commodi vero ab iure?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+            autem repudiandae officia labore. Et repudiandae libero incidunt
+            soluta, harum fugiat repellat error consectetur, pariatur impedit
+            delectus, commodi vero ab iure?
+          </p>
+          <div className="btn">
+            <button>Youtube</button>
+          </div>
+        </div>
+      </section>
+      <section className="home">
+        <h1>Sermons</h1>
+        <div className="sermons">
+          <div className=" sermon sermon1">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              quos libero quam, velit itaque sequi nulla officia consequuntur
+              sint necessitatibus autem praesentium, obcaecati veritatis id,
+              tempore ad. Veritatis, nostrum voluptatum.
+            </p>
+          </div>
+          <div className="sermon sermon1">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              quos libero quam, velit itaque sequi nulla officia consequuntur
+              sint necessitatibus autem praesentium, obcaecati veritatis id,
+              tempore ad. Veritatis, nostrum voluptatum.
+            </p>
+          </div>
+          <div className="sermon sermon1">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              quos libero quam, velit itaque sequi nulla officia consequuntur
+              sint necessitatibus autem praesentium, obcaecati veritatis id,
+              tempore ad. Veritatis, nostrum voluptatum.
+            </p>
+          </div>
+        </div>
+        <h1>Events</h1>
+        <div className="events">
+          <div className="event event1"></div>
+          <div className="event event2"></div>
+          <div className="event event3"></div>
+        </div>
+      </section>
+      <section className="home-down">
+        <h1>Our Team</h1>
+        <div className="team">
+          <div className="down"></div>
+          <div className="down"></div>
+          <div className="down"></div>
+          <div className="down"></div>
+        </div>
       </section>
 
       <ToastContainer
@@ -34,7 +103,7 @@ const Home = () => {
         pauseOnHover
         theme="light"
       />
-      {/* Same as */}
+
       <ToastContainer />
     </div>
   );

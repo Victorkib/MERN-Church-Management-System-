@@ -11,6 +11,10 @@
 .app {
   background-color: wheat;
 }
+.navbar {
+  margin-top: 1.5px;
+  margin-bottom: 20px;
+}
 .navbar header {
   display: flex;
   justify-content: space-between;
@@ -18,8 +22,6 @@
   max-width: 900px;
   margin: 0 auto;
   border-bottom: 1px solid crimson;
-  height: 9vh;
-  margin-bottom: 6px;
 }
 .navbar header h1 {
   font-size: 2rem;
@@ -37,19 +39,161 @@
   font-size: 1.2rem;
   text-decoration: none;
 }
-/**/
-/**/
-
-.hero {
-  text-align: center;
-  width: 1300px;
-  margin: 0 auto;
+/*account-navabr css*/
+.account-navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
   height: 100vh;
-  background-image: url('churchImg2.jpg');
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  padding: 100px 0;
+  width: 300px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.userName {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  color: olive;
+}
+.edit-btn:hover {
+  color: #ff6600;
+}
+.edit-form {
+  border-right: 1px solid olive;
+  border-radius: 1px 50px 50px 10px;
+  background-color: beige;
+  height: 35vh;
+}
+.logout-btn {
+  border: 1px solid wheat;
+  border-radius: 9px;
+  padding: 4px;
+  margin: 20px 0px;
+  background: crimson;
+  text-align: center;
+}
+.account-icon {
+  cursor: pointer;
+}
+.back-icon {
+  cursor: pointer;
+}
+
+/*end of account-navbar css*/
+
+.home-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 10px;
+}
+.hm1 {
+  width: 65%;
+  height: 100%;
+}
+.hm2 {
+  width: 35%;
+  height: 100%;
+  padding: 3px;
+}
+
+.btn {
+  border: 1px solid gray;
+  border-radius: 3px 5px 8px 2px;
+  background-color: crimson;
+  height: 8vh;
+  max-width: 40%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+  background-color: lightcoral;
+  cursor: pointer;
+}
+.hm1 img {
+  object-fit: contain;
+  object-position: center;
+  border-radius: 25px 65px 10px 13px;
+  transition: filter 0.3s ease-in-out;
+}
+.hm1 img:hover {
+  filter: drop-shadow(2px 2px 4px crimson);
+}
+
+.home,
+.home-down {
+  max-width: 1300px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sermons,
+.events {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  align-items: center;
+  height: 50vh;
+  transition: transform ease-in;
+}
+
+.home h1,
+.home-down h1 {
+  margin: 10px;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  color: #ff6600;
+  text-shadow: 2px 2px 4px coral;
+  text-decoration: underline;
+  /* max-width: fit-content; */
+}
+.sermon,
+.event {
+  border-radius: 8px;
+  border: 1px solid aqua;
+  width: 33.33%;
+  height: 100%;
+  transition: transform 0.3s;
+}
+.sermon:hover,
+.event:hover {
+  transform: scale(1.02);
+}
+.team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  max-width: 1300px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  gap: 4px;
+}
+.down {
+  width: 25%;
+  height: 100%;
+  margin: 2px;
+  border: 1px solid coral;
+  transition: transform 0.3s ease-in;
+}
+.down:hover {
+  transform: scale(1.02);
 }
 
 /**/
@@ -132,7 +276,8 @@ form button {
 .links {
   display: flex;
   justify-content: space-between;
-  padding: 5px;
+  padding: 10px;
+  gap: 10px;
 }
 .links li a {
   margin: 0 8px;
@@ -158,6 +303,7 @@ form button {
 }
 
 .footer-links ul li a:hover,
+.navbar a:hover,
 .footer-social ul li a:hover {
   color: #ff6600;
 }

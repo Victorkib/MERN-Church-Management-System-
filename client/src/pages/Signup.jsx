@@ -1,9 +1,14 @@
 import { useState } from 'react';
+
 import { useNavigate } from 'react-router-dom';
+import { setIsloggedIn } from '../features/isLoggedIn/isLoggedInSlice';
+import { useDispatch } from 'react-redux';
+import { setUsersName } from '../features/userName/userNameSlice';
+import { setIsVisible } from '../features/isVisible/isVisibleSlice';
 
 const Signup = () => {
   const navigate = useNavigate();
-
+  const dispatch = useDispatch();
   const [userName, setUserName] = useState('');
   const [email, setEmail] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
@@ -20,10 +25,17 @@ const Signup = () => {
         credentials: 'include',
       });
       const json = await response.json();
+      //get the user's name from the json above
+      console.log(json);
+      //dispatch(json)
       if (!response.ok) {
         setError(json.error);
       } else {
         // Successful response, show a toast and navigate
+        console.log(json.value, json.userName);
+        dispatch(setUsersName(json.userName));
+        dispatch(setIsloggedIn(json.value));
+        dispatch(setIsVisible());
         navigate('/');
       }
     } catch (error) {
