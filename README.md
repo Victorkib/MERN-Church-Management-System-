@@ -1,1 +1,3 @@
-A  church management system developed by the MERN stack.
+A  church management system developed.
+Developer: VIctor Kibiwott
+Frontend: React. 
